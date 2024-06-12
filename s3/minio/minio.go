@@ -18,8 +18,8 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"github.com/DianGeIM/tools/s3"
 	"github.com/minio/minio-go/v7"
-	"github.com/openimsdk/tools/s3"
 	"io"
 	"net/http"
 	"net/url"
@@ -31,10 +31,10 @@ import (
 	"time"
 	"unsafe"
 
+	"github.com/DianGeIM/tools/errs"
+	"github.com/DianGeIM/tools/log"
 	"github.com/minio/minio-go/v7/pkg/credentials"
 	"github.com/minio/minio-go/v7/pkg/signer"
-	"github.com/openimsdk/tools/errs"
-	"github.com/openimsdk/tools/log"
 )
 
 const (

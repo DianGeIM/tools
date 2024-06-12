@@ -20,14 +20,14 @@ import (
 	"encoding/hex"
 	"errors"
 	"fmt"
-	"github.com/openimsdk/tools/s3"
+	"github.com/DianGeIM/tools/s3"
 	"path"
 	"strings"
 	"time"
 
+	"github.com/DianGeIM/tools/errs"
+	"github.com/DianGeIM/tools/log"
 	"github.com/google/uuid"
-	"github.com/openimsdk/tools/errs"
-	"github.com/openimsdk/tools/log"
 )
 
 func New(cache S3Cache, impl s3.Interface) *Controller {

@@ -1,4 +1,4 @@
-module github.com/openimsdk/tools
+module github.com/DianGeIM/tools
 
 go 1.21
 

@@ -1,9 +1,9 @@
 package apiresp
 
 import (
+	"github.com/DianGeIM/tools/utils/jsonutil"
 	"github.com/openimsdk/protocol/friend"
 	"github.com/openimsdk/protocol/wrapperspb"
-	"github.com/openimsdk/tools/utils/jsonutil"
 	"testing"
 )
 

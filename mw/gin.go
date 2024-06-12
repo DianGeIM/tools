@@ -17,10 +17,10 @@ package mw
 import (
 	"net/http"
 
+	"github.com/DianGeIM/tools/apiresp"
+	"github.com/DianGeIM/tools/errs"
 	"github.com/gin-gonic/gin"
 	"github.com/openimsdk/protocol/constant"
-	"github.com/openimsdk/tools/apiresp"
-	"github.com/openimsdk/tools/errs"
 )
 
 // CorsHandler gin cross-domain configuration.

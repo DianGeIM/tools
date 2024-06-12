@@ -3,8 +3,8 @@ package checker_test
 import (
 	"testing"
 
-	"github.com/openimsdk/tools/checker"
-	"github.com/openimsdk/tools/errs"
+	"github.com/DianGeIM/tools/checker"
+	"github.com/DianGeIM/tools/errs"
 	"github.com/stretchr/testify/assert"
 )
 

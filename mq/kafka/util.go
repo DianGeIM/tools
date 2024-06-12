@@ -3,9 +3,9 @@ package kafka
 import (
 	"context"
 	"errors"
+	"github.com/DianGeIM/tools/mcontext"
 	"github.com/IBM/sarama"
 	"github.com/openimsdk/protocol/constant"
-	"github.com/openimsdk/tools/mcontext"
 )
 
 var errEmptyMsg = errors.New("kafka binary msg is empty")

@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"strings"
 
+	"github.com/DianGeIM/tools/errs"
 	"github.com/IBM/sarama"
-	"github.com/openimsdk/tools/errs"
 )
 
 func BuildConsumerGroupConfig(conf *Config, initial int64) (*sarama.Config, error) {

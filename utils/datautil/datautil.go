@@ -15,9 +15,9 @@
 package datautil
 
 import (
+	"github.com/DianGeIM/tools/errs"
+	"github.com/DianGeIM/tools/utils/jsonutil"
 	"github.com/jinzhu/copier"
-	"github.com/openimsdk/tools/errs"
-	"github.com/openimsdk/tools/utils/jsonutil"
 	"reflect"
 	"sort"
 )

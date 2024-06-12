@@ -18,9 +18,9 @@ import (
 	"context"
 	"time"
 
-	"github.com/openimsdk/tools/db/tx"
-	"github.com/openimsdk/tools/errs"
-	"github.com/openimsdk/tools/mw/specialerror"
+	"github.com/DianGeIM/tools/db/tx"
+	"github.com/DianGeIM/tools/errs"
+	"github.com/DianGeIM/tools/mw/specialerror"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
