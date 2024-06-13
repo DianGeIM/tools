@@ -16,6 +16,7 @@ package redisutil
 
 import (
 	"context"
+	"crypto/tls"
 
 	"github.com/DianGeIM/tools/errs"
 	"github.com/redis/go-redis/v9"
@@ -31,6 +32,7 @@ type Config struct {
 	MaxRetry    int      // Maximum number of retries for a command.
 	DB          int      // Database number to connect to, for non-cluster mode.
 	PoolSize    int      // Number of connections to pool.
+	UseTLS      bool     // Whether to use TLS for the connection.
 }
 
 func NewRedisClient(ctx context.Context, config *Config) (redis.UniversalClient, error) {
@@ -46,6 +48,9 @@ func NewRedisClient(ctx context.Context, config *Config) (redis.UniversalClient,
 			PoolSize:   config.PoolSize,
 			MaxRetries: config.MaxRetry,
 		}
+		if config.UseTLS {
+			opt.TLSConfig = &tls.Config{MinVersion: tls.VersionTLS12}
+		}
 		cli = redis.NewClusterClient(opt)
 	} else {
 		opt := &redis.Options{
@@ -55,6 +60,11 @@ func NewRedisClient(ctx context.Context, config *Config) (redis.UniversalClient,
 			DB:         config.DB,
 			PoolSize:   config.PoolSize,
 			MaxRetries: config.MaxRetry,
+			TLSConfig:  &tls.Config{MinVersion: tls.VersionTLS12},
+		}
+
+		if config.UseTLS {
+			opt.TLSConfig = &tls.Config{MinVersion: tls.VersionTLS12}
 		}
 		cli = redis.NewClient(opt)
 	}
