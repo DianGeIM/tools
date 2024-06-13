@@ -17,8 +17,8 @@ package zookeeper
 import (
 	"time"
 
+	"github.com/DianGeIM/tools/errs"
 	"github.com/go-zookeeper/zk"
-	"github.com/openimsdk/tools/errs"
 	"google.golang.org/grpc"
 )
 

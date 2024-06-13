@@ -23,7 +23,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/openimsdk/tools/s3"
+	"github.com/DianGeIM/tools/s3"
 	"github.com/tencentyun/cos-go-sdk-v5"
 	"net/http"
 	"net/url"
@@ -31,7 +31,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/openimsdk/tools/errs"
+	"github.com/DianGeIM/tools/errs"
 )
 
 const (

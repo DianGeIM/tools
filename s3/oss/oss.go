@@ -22,7 +22,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/openimsdk/tools/s3"
+	"github.com/DianGeIM/tools/s3"
 	"io"
 	"net/http"
 	"net/url"
@@ -31,8 +31,8 @@ import (
 	"strings"
 	"time"
 
+	"github.com/DianGeIM/tools/errs"
 	"github.com/aliyun/aliyun-oss-go-sdk/oss"
-	"github.com/openimsdk/tools/errs"
 )
 
 const (

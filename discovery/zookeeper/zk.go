@@ -21,9 +21,9 @@ import (
 	"sync"
 	"time"
 
+	"github.com/DianGeIM/tools/errs"
+	"github.com/DianGeIM/tools/log"
 	"github.com/go-zookeeper/zk"
-	"github.com/openimsdk/tools/errs"
-	"github.com/openimsdk/tools/log"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/resolver"
 )

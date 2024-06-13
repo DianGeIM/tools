@@ -19,8 +19,8 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/DianGeIM/tools/errs"
 	"github.com/go-zookeeper/zk"
-	"github.com/openimsdk/tools/errs"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/resolver"
 )

@@ -16,8 +16,8 @@ package kafka
 
 import (
 	"context"
+	"github.com/DianGeIM/tools/errs"
 	"github.com/IBM/sarama"
-	"github.com/openimsdk/tools/errs"
 	"google.golang.org/protobuf/proto"
 )
 

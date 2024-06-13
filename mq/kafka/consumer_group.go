@@ -18,8 +18,8 @@ import (
 	"context"
 	"errors"
 
+	"github.com/DianGeIM/tools/log"
 	"github.com/IBM/sarama"
-	"github.com/openimsdk/tools/log"
 )
 
 type MConsumerGroup struct {
